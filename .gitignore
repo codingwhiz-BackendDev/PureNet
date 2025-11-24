@@ -1,0 +1,27 @@
+# Chrome Extension
+*.pem
+*.crx
+*.zip
+
+# Icons (if you want to regenerate them)
+# icons/*.png
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Node modules (if you add any build tools)
+node_modules/
+

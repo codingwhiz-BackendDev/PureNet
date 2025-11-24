@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PureNet</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            width: 350px;
+            min-height: 400px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+        }
+
+        .container {
+            background: white;
+            margin: 0;
+            padding: 30px 25px;
+            min-height: 400px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .icon {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            color: white;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #2d3748;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #718096;
+        }
+
+        .stats {
+            background: #f7fafc;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 25px 0;
+            text-align: center;
+        }
+
+        .stat-item {
+            margin: 15px 0;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: #a0aec0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+        }
+
+        .stat-value {
+            font-size: 28px;
+            font-weight: 700;
+            color: #667eea;
+        }
+
+        .status {
+            background: #c6f6d5;
+            border: 1px solid #9ae6b4;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .status.active {
+            background: #c6f6d5;
+            border-color: #9ae6b4;
+        }
+
+        .status.inactive {
+            background: #fed7d7;
+            border-color: #fc8181;
+        }
+
+        .status-text {
+            font-size: 14px;
+            font-weight: 600;
+            color: #22543d;
+        }
+
+        .status.inactive .status-text {
+            color: #742a2a;
+        }
+
+        .toggle-btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 15px;
+        }
+
+        .toggle-btn.enable {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .toggle-btn.disable {
+            background: #e2e8f0;
+            color: #4a5568;
+        }
+
+        .toggle-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            text-align: center;
+            font-size: 12px;
+            color: #a0aec0;
+        }
+
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon">🛡️</div>
+            <h1>PureNet</h1>
+            <p class="subtitle">Protecting your browsing experience</p>
+        </div>
+
+        <div class="status active" id="status">
+            <div class="status-text">🟢 Active & Protecting</div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-label">Sites Blocked</div>
+                <div class="stat-value" id="blockedCount">0</div>
+            </div>
+        </div>
+
+        <button class="toggle-btn enable" id="toggleBtn" style="display: none;">
+            Enable Protection
+        </button>
+
+        <div class="footer">
+            <p>Version 1.0.0</p>
+            <p style="margin-top: 5px;">
+                <a href="#" id="aboutLink">About PureNet</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
+

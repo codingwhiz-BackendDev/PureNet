@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Blocked - PureNet</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            width: 100%;
+            padding: 50px 40px;
+            text-align: center;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .icon {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            color: white;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: #2d3748;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #718096;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .message {
+            background: #f7fafc;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+            text-align: left;
+        }
+
+        .message p {
+            color: #4a5568;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 28px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+
+        .btn-secondary {
+            background: #e2e8f0;
+            color: #4a5568;
+        }
+
+        .btn-secondary:hover {
+            background: #cbd5e0;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #e2e8f0;
+            color: #a0aec0;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .subtitle {
+                font-size: 16px;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">🛡️</div>
+        <h1>Access Blocked</h1>
+        <p class="subtitle">This website has been blocked by PureNet</p>
+        
+        <div class="message">
+            <p>
+                <strong>Why was this blocked?</strong><br>
+                PureNet has detected that this website contains adult content. 
+                For your safety and to maintain a safe browsing environment, access to this site has been restricted.
+            </p>
+        </div>
+
+        <div class="button-group">
+            <button class="btn btn-primary" onclick="goBack()">Go Back</button>
+            <a href="https://www.google.com" class="btn btn-secondary">Go to Google</a>
+        </div>
+
+        <div class="footer">
+            <p>Protected by <strong>PureNet</strong> - Your trusted content filter</p>
+            <p style="margin-top: 10px; font-size: 12px;">
+                If you believe this is a mistake, please contact support.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            if (window.history.length > 1) {
+                window.history.back();
+            } else {
+                window.location.href = 'https://www.google.com';
+            }
+        }
+
+        // Prevent right-click and inspect element (optional security measure)
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // Log blocked attempt (optional)
+        console.log('PureNet: Access blocked to adult content');
+    </script>
+</body>
+</html>
+
