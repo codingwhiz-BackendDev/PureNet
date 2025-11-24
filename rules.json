@@ -10,7 +10,10 @@
     },
     "condition": {
       "regexFilter": ".*(porn|xxx|adult|sex|nude|naked|erotic|nsfw|hentai|pornhub|xvideos|xnxx|redtube|youporn|tube8|spankwire|keezmovies|extremetube|4tube|tnaflix|slutload|sunporno|pornotube|pornhub|xtube|beeg|drtuber|hardsextube|pornotube|pornoxo|pornrabbit|pornhd|porn300|porn555|porn700|porn800|porn900|porn1000|porn2000|porn3000|porn4000|porn5000|porn6000|porn7000|porn8000|porn9000|porn10000|pornhub|pornotube|pornoxo|pornrabbit|pornhd|porn300|porn555|porn700|porn800|porn900|porn1000|porn2000|porn3000|porn4000|porn5000|porn6000|porn7000|porn8000|porn9000|porn10000|bangbros|brazzers|realitykings|digitalplayground|wicked|vivid|naughty|playboy|penthouse|hustler|maxim|fhm|playboy|penthouse|hustler|maxim|fhm|bangbros|brazzers|realitykings|digitalplayground|wicked|vivid|naughty|playboy|penthouse|hustler|maxim|fhm).*",
-      "resourceTypes": ["main_frame", "sub_frame"]
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
     }
   },
   {
@@ -24,7 +27,10 @@
     },
     "condition": {
       "regexFilter": ".*\\.(xxx|sex|adult|porn|nsfw)\\..*",
-      "resourceTypes": ["main_frame", "sub_frame"]
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
     }
   },
   {
@@ -37,8 +43,7 @@
       }
     },
     "condition": {
-      "urlFilter": "*://pornhub.com/*",
-      "resourceTypes": ["main_frame", "sub_frame"]
+      "urlFilter": "*://pornhub.com/*"
     }
   },
   {
@@ -51,8 +56,7 @@
       }
     },
     "condition": {
-      "urlFilter": "*://www.pornhub.com/*",
-      "resourceTypes": ["main_frame", "sub_frame"]
+      "urlFilter": "*://www.pornhub.com/*"
     }
   },
   {
@@ -65,8 +69,7 @@
       }
     },
     "condition": {
-      "urlFilter": "*://xvideos.com/*",
-      "resourceTypes": ["main_frame", "sub_frame"]
+      "urlFilter": "*://xvideos.com/*"
     }
   },
   {
@@ -79,8 +82,7 @@
       }
     },
     "condition": {
-      "urlFilter": "*://xnxx.com/*",
-      "resourceTypes": ["main_frame", "sub_frame"]
+      "urlFilter": "*://xnxx.com/*"
     }
   },
   {
@@ -93,8 +95,7 @@
       }
     },
     "condition": {
-      "urlFilter": "*://redtube.com/*",
-      "resourceTypes": ["main_frame", "sub_frame"]
+      "urlFilter": "*://redtube.com/*"
     }
   },
   {
@@ -107,8 +108,7 @@
       }
     },
     "condition": {
-      "urlFilter": "*://youporn.com/*",
-      "resourceTypes": ["main_frame", "sub_frame"]
+      "urlFilter": "*://youporn.com/*"
     }
   },
   {
@@ -121,8 +121,7 @@
       }
     },
     "condition": {
-      "urlFilter": "*://tube8.com/*",
-      "resourceTypes": ["main_frame", "sub_frame"]
+      "urlFilter": "*://tube8.com/*"
     }
   },
   {
@@ -135,8 +134,7 @@
       }
     },
     "condition": {
-      "urlFilter": "*://spankwire.com/*",
-      "resourceTypes": ["main_frame", "sub_frame"]
+      "urlFilter": "*://spankwire.com/*"
     }
   },
   {
@@ -149,8 +147,7 @@
       }
     },
     "condition": {
-      "urlFilter": "*://keezmovies.com/*",
-      "resourceTypes": ["main_frame", "sub_frame"]
+      "urlFilter": "*://keezmovies.com/*"
     }
   },
   {
@@ -163,8 +160,7 @@
       }
     },
     "condition": {
-      "urlFilter": "*://extremetube.com/*",
-      "resourceTypes": ["main_frame", "sub_frame"]
+      "urlFilter": "*://extremetube.com/*"
     }
   },
   {
@@ -177,8 +173,7 @@
       }
     },
     "condition": {
-      "urlFilter": "*://4tube.com/*",
-      "resourceTypes": ["main_frame", "sub_frame"]
+      "urlFilter": "*://4tube.com/*"
     }
   },
   {
@@ -191,8 +186,7 @@
       }
     },
     "condition": {
-      "urlFilter": "*://tnaflix.com/*",
-      "resourceTypes": ["main_frame", "sub_frame"]
+      "urlFilter": "*://tnaflix.com/*"
     }
   },
   {
@@ -205,8 +199,7 @@
       }
     },
     "condition": {
-      "urlFilter": "*://slutload.com/*",
-      "resourceTypes": ["main_frame", "sub_frame"]
+      "urlFilter": "*://slutload.com/*"
     }
   },
   {
@@ -219,8 +212,7 @@
       }
     },
     "condition": {
-      "urlFilter": "*://sunporno.com/*",
-      "resourceTypes": ["main_frame", "sub_frame"]
+      "urlFilter": "*://sunporno.com/*"
     }
   },
   {
@@ -233,8 +225,7 @@
       }
     },
     "condition": {
-      "urlFilter": "*://xtube.com/*",
-      "resourceTypes": ["main_frame", "sub_frame"]
+      "urlFilter": "*://xtube.com/*"
     }
   },
   {
@@ -247,8 +238,7 @@
       }
     },
     "condition": {
-      "urlFilter": "*://beeg.com/*",
-      "resourceTypes": ["main_frame", "sub_frame"]
+      "urlFilter": "*://beeg.com/*"
     }
   },
   {
@@ -261,8 +251,7 @@
       }
     },
     "condition": {
-      "urlFilter": "*://drtuber.com/*",
-      "resourceTypes": ["main_frame", "sub_frame"]
+      "urlFilter": "*://drtuber.com/*"
     }
   },
   {
@@ -275,8 +264,7 @@
       }
     },
     "condition": {
-      "urlFilter": "*://hardsextube.com/*",
-      "resourceTypes": ["main_frame", "sub_frame"]
+      "urlFilter": "*://hardsextube.com/*"
     }
   },
   {
@@ -289,8 +277,7 @@
       }
     },
     "condition": {
-      "urlFilter": "*://bangbros.com/*",
-      "resourceTypes": ["main_frame", "sub_frame"]
+      "urlFilter": "*://bangbros.com/*"
     }
   },
   {
@@ -303,8 +290,7 @@
       }
     },
     "condition": {
-      "urlFilter": "*://brazzers.com/*",
-      "resourceTypes": ["main_frame", "sub_frame"]
+      "urlFilter": "*://brazzers.com/*"
     }
   },
   {
@@ -317,8 +303,7 @@
       }
     },
     "condition": {
-      "urlFilter": "*://realitykings.com/*",
-      "resourceTypes": ["main_frame", "sub_frame"]
+      "urlFilter": "*://realitykings.com/*"
     }
   },
   {
@@ -331,8 +316,7 @@
       }
     },
     "condition": {
-      "urlFilter": "*://digitalplayground.com/*",
-      "resourceTypes": ["main_frame", "sub_frame"]
+      "urlFilter": "*://digitalplayground.com/*"
     }
   },
   {
@@ -345,8 +329,7 @@
       }
     },
     "condition": {
-      "urlFilter": "*://wicked.com/*",
-      "resourceTypes": ["main_frame", "sub_frame"]
+      "urlFilter": "*://wicked.com/*"
     }
   },
   {
@@ -359,9 +342,7 @@
       }
     },
     "condition": {
-      "urlFilter": "*://vivid.com/*",
-      "resourceTypes": ["main_frame", "sub_frame"]
+      "urlFilter": "*://vivid.com/*"
     }
   }
 ]
-
