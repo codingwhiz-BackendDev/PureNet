@@ -12,31 +12,57 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Georgia', 'Garamond', serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 20px;
-            color: #333;
+            color: #e8e8f0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* <CHANGE> Added animated background elements for visual depth */
+        body::before {
+            content: '';
+            position: fixed;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(168, 85, 247, 0.08) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: drift 20s linear infinite;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        @keyframes drift {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
         }
 
         .container {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            max-width: 600px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+            max-width: 650px;
             width: 100%;
-            padding: 50px 40px;
+            padding: 60px 50px;
             text-align: center;
-            animation: fadeIn 0.5s ease-in;
+            animation: slideUp 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+            position: relative;
+            z-index: 2;
         }
 
-        @keyframes fadeIn {
+        @keyframes slideUp {
             from {
                 opacity: 0;
-                transform: translateY(-20px);
+                transform: translateY(40px);
             }
             to {
                 opacity: 1;
@@ -45,129 +71,208 @@
         }
 
         .icon {
-            width: 120px;
-            height: 120px;
-            margin: 0 auto 30px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            width: 140px;
+            height: 140px;
+            margin: 0 auto 40px;
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.2) 0%, rgba(236, 72, 153, 0.2) 100%);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 60px;
-            color: white;
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+            font-size: 70px;
+            color: #d8b4fe;
+            box-shadow: 0 0 40px rgba(168, 85, 247, 0.3), inset 0 0 30px rgba(168, 85, 247, 0.1);
+            border: 1px solid rgba(168, 85, 247, 0.3);
+            animation: floatIcon 3s ease-in-out infinite;
+        }
+
+        @keyframes floatIcon {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
         }
 
         h1 {
-            font-size: 32px;
-            margin-bottom: 15px;
-            color: #2d3748;
-            font-weight: 700;
+            font-size: 48px;
+            margin-bottom: 12px;
+            color: #ffffff;
+            font-weight: 400;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
         }
 
         .subtitle {
             font-size: 18px;
-            color: #718096;
-            margin-bottom: 30px;
+            color: #a8a8b8;
+            margin-bottom: 40px;
             line-height: 1.6;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-weight: 300;
+            letter-spacing: 0.3px;
         }
 
         .message {
-            background: #f7fafc;
-            border-left: 4px solid #667eea;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 30px 0;
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.1) 0%, rgba(236, 72, 153, 0.05) 100%);
+            border-left: 3px solid rgba(168, 85, 247, 0.5);
+            padding: 28px;
+            border-radius: 12px;
+            margin: 40px 0;
             text-align: left;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(168, 85, 247, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .message:hover {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.15) 0%, rgba(236, 72, 153, 0.1) 100%);
+            border-left-color: rgba(168, 85, 247, 0.8);
         }
 
         .message p {
-            color: #4a5568;
+            color: #d0d0d8;
             line-height: 1.8;
-            font-size: 16px;
+            font-size: 15px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        .message strong {
+            color: #e8b4fd;
+            font-weight: 600;
         }
 
         .button-group {
             display: flex;
-            gap: 15px;
+            gap: 16px;
             justify-content: center;
-            margin-top: 30px;
+            margin-top: 40px;
             flex-wrap: wrap;
         }
 
         .btn {
-            padding: 14px 28px;
+            padding: 16px 36px;
             border: none;
-            border-radius: 8px;
-            font-size: 16px;
+            border-radius: 12px;
+            font-size: 15px;
             font-weight: 600;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
             text-decoration: none;
             display: inline-block;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            letter-spacing: 0.3px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            transition: left 0.3s ease;
+            z-index: 1;
+        }
+
+        .btn:hover::before {
+            left: 100%;
         }
 
         .btn-primary {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
             color: white;
-            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 10px 30px rgba(168, 85, 247, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         .btn-primary:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 40px rgba(168, 85, 247, 0.6);
+        }
+
+        .btn-primary:active {
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
         }
 
         .btn-secondary {
-            background: #e2e8f0;
-            color: #4a5568;
+            background: rgba(255, 255, 255, 0.08);
+            color: #d0d0d8;
+            border: 1px solid rgba(255, 255, 255, 0.15);
         }
 
         .btn-secondary:hover {
-            background: #cbd5e0;
+            background: rgba(255, 255, 255, 0.12);
+            color: #ffffff;
+            border-color: rgba(255, 255, 255, 0.25);
+            transform: translateY(-2px);
         }
 
         .footer {
-            margin-top: 40px;
-            padding-top: 30px;
-            border-top: 1px solid #e2e8f0;
-            color: #a0aec0;
-            font-size: 14px;
+            margin-top: 50px;
+            padding-top: 35px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #808088;
+            font-size: 13px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            letter-spacing: 0.5px;
         }
 
         .footer a {
-            color: #667eea;
+            color: #d8b4fe;
             text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 500;
         }
 
         .footer a:hover {
+            color: #f0b4ff;
             text-decoration: underline;
+        }
+
+        .footer p {
+            margin-bottom: 8px;
         }
 
         @media (max-width: 600px) {
             .container {
-                padding: 30px 20px;
+                padding: 40px 28px;
             }
 
             h1 {
-                font-size: 24px;
+                font-size: 32px;
             }
 
             .subtitle {
                 font-size: 16px;
             }
 
+            .icon {
+                width: 100px;
+                height: 100px;
+                font-size: 50px;
+                margin-bottom: 30px;
+            }
+
             .button-group {
                 flex-direction: column;
+                gap: 12px;
             }
 
             .btn {
                 width: 100%;
+                padding: 14px 28px;
+            }
+
+            .message {
+                padding: 20px;
+                font-size: 14px;
             }
         }
     </style>
 </head>
 <body>
+    <br>
     <div class="container">
         <div class="icon">🛡️</div>
         <h1>Access Blocked</h1>
@@ -192,6 +297,7 @@
                 If you believe this is a mistake, please contact support.
             </p>
         </div>
+
     </div>
 
     <script>
@@ -202,7 +308,7 @@
                 window.location.href = 'https://www.google.com';
             }
         }
-
+    
         // Prevent right-click and inspect element (optional security measure)
         document.addEventListener('contextmenu', function(e) {
             e.preventDefault();
@@ -213,4 +319,3 @@
     </script>
 </body>
 </html>
-
