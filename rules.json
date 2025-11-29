@@ -349,7 +349,7 @@
       }
     },
     "condition": {
-      "urlFilter": "*://beeg.com/*",
+      "urlFilter": "*://beeg.onl/*",
       "resourceTypes": [
         "main_frame",
         "sub_frame"
@@ -672,7 +672,7 @@
       }
     },
     "condition": {
-      "urlFilter": "*://www.beeg.com/*",
+      "urlFilter": "*://www.beeg.onl/*",
       "resourceTypes": [
         "main_frame",
         "sub_frame"
