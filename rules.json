@@ -872,7 +872,7 @@
       }
     },
     "condition": {
-      "urlFilter": "*://xhamster.com/*",
+      "urlFilter": "https://www.xhamster.com/",
       "resourceTypes": [
         "main_frame",
         "sub_frame"
@@ -1833,6 +1833,102 @@
     },
     "condition": {
       "urlFilter": "*://www.24xxx.porn/*",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    }
+  },{
+    "id": 113,
+    "priority": 2,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/blocked.html"
+      }
+    },
+    "condition": {
+      "urlFilter": "*://en.hdsex.tv/*",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    }
+  },{
+    "id": 114,
+    "priority": 2,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/blocked.html"
+      }
+    },
+    "condition": {
+      "urlFilter": "*://www.en.hdsex.tv/*",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    }
+  },{
+    "id": 115,
+    "priority": 2,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/blocked.html"
+      }
+    },
+    "condition": {
+      "urlFilter": "*://ok.xxx/*",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    }
+  },{
+    "id": 116,
+    "priority": 2,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/blocked.html"
+      }
+    },
+    "condition": {
+      "urlFilter": "*://www.ok.xxx/*",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    }
+  },{
+    "id": 117,
+    "priority": 2,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/blocked.html"
+      }
+    },
+    "condition": {
+      "urlFilter": "*://pornhat.com/*",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    }
+  },{
+    "id": 118,
+    "priority": 2,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/blocked.html"
+      }
+    },
+    "condition": {
+      "urlFilter": "*://www.pornhat.com/*",
       "resourceTypes": [
         "main_frame",
         "sub_frame"
